@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2? family= Josefin+Sans:wght@300;400;600 & display=swap');
+
+:root {
+    --font-josefin: 'josefin', sans-serif;
+    --font-sans: 'sans', sans-serif;
+    --color-Desaturated-Red: hsl(0, 36%, 70%);
+    --color-Soft-Red: hsl(0, 93%, 68%);
+    --color-Dark-Grayish-Red: hsl(0, 6%, 24%);
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card {
+    width: 100%;
+    height: 100vh;
+}
+
+.card-image{
+    height: 80px;
+}
+
+.logo-svg {
+    padding: 20px 10vw 0px ;
+}
+
+.hero-mobile {
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.card-info{
+    /* padding-left: 20px;
+    padding-right: 20px; */
+}
+
+.card-info-head-1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4vw;
+    padding-bottom: 30px;
+    line-height: 30px;
+}
+
+.card-info-head-1 {
+    font-weight:100;
+    color: var(--color-Desaturated-Red);
+    font-family: var(--font-josefin);
+}
+
+.info-head-brow {
+    font-weight: 700;
+    color: var(--color-Dark-Grayish-Red);
+}
+
+.card-description {
+    text-align: center;
+    max-width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--color-Desaturated-Red);
+    padding-bottom: 30px;
+}
+
+.card-footer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+
+}
+
+input{
+    height: 40px;
+   border: 2px solid var(--color-Desaturated-Red);
+   border-radius: 40px;
+    width: 300px;
+}
+
+::placeholder {
+    color: var(--color-Desaturated-Red);
+    padding-left: 10px;
+}
+
+button {
+    background-color: var(--color-Desaturated-Red);
+    border: 2px solid var(--color-Desaturated-Red);
+    position: relative;
+    height: 40px;
+    right: 40px;
+    width: 50px;
+    border-radius: 45%;
+    cursor: pointer;
+
+}
+
+.hero-desktop {
+    display: none;
+}
+
+
+@media screen and (min-width: 800px) {
+    .hero-mobile{
+        display: none;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: row;
+        padding: 100px 80px;
+        align-items: center;
+        justify-content: center;
+        background-image: url(./assets/images/bg-pattern-desktop.svg);
+    }
+
+    .hero-desktop{
+        height: 65vh;
+        display: flex;
+    }
+
+    .card-image{
+        left: 100%;
+    }
+    .logo-svg {
+        padding: 0;
+    }
+
+    .card-info-head-1 {
+      text-align: left;
+      letter-spacing: 10px;
+       
+    }
+
+    .card-description {
+        text-align: left;
+        margin: 0;
+    }
+    
+    .card-footer{
+        justify-content: left;
+    }
+}
+
+
+
+
